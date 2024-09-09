@@ -54,15 +54,14 @@
         box-sizing: border-box; 
      }
 
-     .main{
+     article{
         font-size: larger;
+        margin-left: 20px;
 
-     }
-     .main h1{
-        text-align: center;
+    
      }
 
-     .main span{
+     article span{
         font-weight: bold;
      }
 
@@ -78,22 +77,24 @@
 </head>
 <body>
     <div class="kepala">
-        <Header>Lirik Lagu</Header>
+        <Header id="12">Lirik Lagu</Header>
     </div>
 
     <div class="navi">
     <nav> 
-        <a href="#">Home</a>
-        <a href="#">Main</a>
+        <a href="#12">Home</a>
+        <a href="#13">Lirik</a>
         <a href="#musik">Musik</a>
     </nav>
     </div>
 
-    <div class="main">
+    <article>
         <p>Website ini adalah website untuk melihat lirik dari sebuah lagu, di website ini anda akan melihat lirik lagu dari <span>Roar - Katy Perry</span>.<br>
-        Jika anda ingin mendengarkan musiknya silahkan klik <span>MUSIK</span> pada kolom navigasi diatas!</p>   
+        Jika anda ingin mendengarkan musiknya silahkan klik <span>MUSIK</span> pada kolom navigasi diatas!</p> 
+    </article> 
 
-        <p><span>Lirik</span><br>
+    <article>
+        <p id="13"><span>Lirik</span><br>
             I used to bite my tongue and hold my breath<br>
             Scared to rock the boat and make a mess<br>
             So I sat quietly, agreed politely<br>
@@ -168,7 +169,7 @@
     
             Source: LyricFind
           </p>
-    </div>
+        </article>
 
         <p id="musik"></p>
         <audio controls>
@@ -180,7 +181,9 @@
 
 
     <div class="kaki">
+    <footer>
         <p>&copy; 2024 lirik lagu</p>
+    </footer>
     </div>
 </body>
 </html>
